@@ -23,17 +23,22 @@
     <%--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>--%>
 
 
-
-        <link rel="stylesheet" href="bootstrap-3.0.3.min.css" type="text/css"/>
-        <script type="text/javascript" src="bootstrap-3.0.3.min.js"></script>
         <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.0.3.min.css" type="text/css"/>
+    <script type="text/javascript" src="bootstrap-3.0.3.min.js"></script>
+        
+        <link rel="stylesheet" href="bootstrap-multiselect.css" type="text/css"/>
+        <script type="text/javascript" src="bootstrap-multiselect.js"></script>
+    
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <%--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css"
     rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>--%>
+
+
+    <%--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>--%>
 <script type="text/javascript">
     $(function () {
         $('[id*=lstFruits]').multiselect({
@@ -67,12 +72,24 @@
     <asp:ListItem Text="Guava" Value="4" />
     <asp:ListItem Text="Orange" Value="5" />
 </asp:ListBox>
+
+
+         <div id="ucp" class="ucp1111">Gebruikers beheer</div>
+ <div id="test" class="test1111">hallo hallo hallo hallo</div>
 <%--<asp:Button Text="Submit" runat="server" OnClick="Submit" />--%>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#example-getting-started').multiselect({
-                });
+
+
+        $(".ucp1111")[0].click(function () {
+            alert("dd");
+            $(".test1111")[0].slideToggle();
         });
+
+
+        //$(document).ready(function () {
+        //    $('#example-getting-started').multiselect({
+        //        });
+        //});
 
         <%--$(document).ready(function () {
             alert("a");
